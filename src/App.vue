@@ -10,9 +10,9 @@
 		<FriendList v-if="!hasUser()"/>
 		<FriendSecretPage v-if="hasUser()"/>
 	</main>
-	<footer>
+	<!-- <footer >
 		<a href="https://github.com/alexsad/secret-friend-list">github project</a>
-	</footer>
+	</footer> -->
 </template>
 
 <script lang="ts">
@@ -48,8 +48,8 @@ body, html{
 	box-sizing:border-box;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 15vh 75vh 10vh;
-	grid-template-areas:"header" "main" "footer";
+	grid-template-rows: 15vh 85vh;
+	grid-template-areas:"header" "main";
 	// grid-gap:16px;
 
 	> header {
