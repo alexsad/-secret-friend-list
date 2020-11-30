@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/secret-friend-list/img/remove.166c2948.svg"
   },
   {
-    "revision": "b91ba643ed2045cacedfe682458fad38",
+    "revision": "179fe883c4ddf91f4a4eca07f20d9e3a",
     "url": "/secret-friend-list/index.html"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/secret-friend-list/js/chunk-vendors.171e57b4.js"
   },
   {
-    "revision": "ff57f0707c7c759b4eb1d24c312740f1",
+    "revision": "118635a0dd779af31361944c0dc03620",
     "url": "/secret-friend-list/manifest.json"
   },
   {
