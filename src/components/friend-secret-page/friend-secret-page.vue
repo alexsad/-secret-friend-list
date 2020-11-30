@@ -1,10 +1,10 @@
 <template lang='pug'>
 h2
 	span(v-if="!checkSecret()")
-		.Say your name
+		.Type your name here
 		input(v-model="secret")
 	span(v-if="checkSecret()")
-		.Your secret friend is "<b>{{surpriseFriend.toUpperCase()}}</b>"
+		.Your Secret Santa is "<b>{{surpriseFriend.toUpperCase()}}</b>"
 </template>
 
 <script lang="ts">
