@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/secret-friend-list/img/remove.166c2948.svg"
   },
   {
-    "revision": "179fe883c4ddf91f4a4eca07f20d9e3a",
+    "revision": "7f8190bda9b2af7924280e905fedb99d",
     "url": "/secret-friend-list/index.html"
   },
   {
