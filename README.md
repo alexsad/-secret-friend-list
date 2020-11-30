@@ -14,10 +14,6 @@ npm run serve
 ```
 npm run build
 ```
-or
-```
-./node_modules/.bin/vue-cli-service build --dest docs
-```
 
 ### Lints and fixes files
 ```

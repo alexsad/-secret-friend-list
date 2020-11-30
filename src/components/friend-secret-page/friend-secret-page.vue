@@ -1,10 +1,8 @@
 <template lang='pug'>
 h2
-	span(v-if="!checkSecret()")
-		.Type your name here
+	span(v-if="!checkSecret()") Type your name here
 		input(v-model="secret")
-	span(v-if="checkSecret()")
-		.Your Secret Santa is "<b>{{surpriseFriend.toUpperCase()}}</b>"
+	span(v-if="checkSecret()") Your Secret Santa is "<b>{{surpriseFriend.toUpperCase()}}</b>"
 </template>
 
 <script lang="ts">
@@ -47,4 +45,19 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+input{
+	display: inline-block;
+	width: 80%;
+	border: none;
+	border-bottom: 1px solid #999999;
+	height: 18px;
+	font-size: 1.2rem;
+
+	&:focus{
+		outline: none !important;
+		border: none;
+		border-bottom: 1px solid purple;
+	}
+}
+</style>
