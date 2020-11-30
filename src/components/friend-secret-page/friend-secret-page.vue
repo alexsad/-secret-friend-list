@@ -1,17 +1,30 @@
 <template lang='pug'>
 h2
-	span(v-if="user !== secret.toLowerCase()")
-		Say your name
+	span(v-if="!checkSecret()")
+		.Say your name
 		input(v-model="secret")
-	span(v-if="user === secret.toLowerCase()")
-		Your secret friend is "<b>{{surpriseFriend.toUpperCase()}}</b>"
+	span(v-if="checkSecret()")
+		.Your secret friend is "<b>{{surpriseFriend.toUpperCase()}}</b>"
 </template>
 
 <script lang="ts">
+
+interface Secret {
+	secret: string;
+	user: string;
+	checkSecret(): boolean;
+}
+
 export default {
 	data:function(){
 		return {
 			secret:''
+		}
+	},
+	methods: {
+		checkSecret() {
+			const {secret, user} = this as Secret;
+			return user === secret.toLowerCase();
 		}
 	},
 	computed: {
