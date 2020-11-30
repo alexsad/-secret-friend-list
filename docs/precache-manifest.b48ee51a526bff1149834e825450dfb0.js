@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f4537cc6745c9f10f341",
-    "url": "/secret-friend-list/css/app.f9037f84.css"
+    "revision": "66f03b5e37ca9566fd3e",
+    "url": "/secret-friend-list/css/app.07e4e460.css"
   },
   {
     "revision": "e3a79b0d0924d34522675f5196fad777",
@@ -12,12 +12,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/secret-friend-list/img/remove.166c2948.svg"
   },
   {
-    "revision": "df1c65f69ca23ef69851ff82b1f74127",
+    "revision": "b91ba643ed2045cacedfe682458fad38",
     "url": "/secret-friend-list/index.html"
   },
   {
-    "revision": "f4537cc6745c9f10f341",
-    "url": "/secret-friend-list/js/app.374808e7.js"
+    "revision": "66f03b5e37ca9566fd3e",
+    "url": "/secret-friend-list/js/app.f9e13a78.js"
   },
   {
     "revision": "035a41e28c0a142a422a",
