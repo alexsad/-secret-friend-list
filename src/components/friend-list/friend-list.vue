@@ -4,7 +4,7 @@ ol
 	li(v-for="friend in friends")
 		FriendItem(:name="friend.name" :surprise-friend="friend.surpriseFriend")
 input(type="text" :value="inputText" placeholder="add a friend here" @keyup.enter="addFriend")
-button(:class="{'is-active': friends.length > 2}" @click="shuffleFriends") Create shuffled list
+button(:class="{'is-active': friends.length > 2}" @click="shuffleFriends") Shuffle list
 </template>
 
 <script lang="ts">
@@ -55,6 +55,7 @@ input{
 }
 button{
 	margin-top:16px;
+	margin-bottom: 16px;
 	text-align: center;
 	border-width: 1px;
 	border-style: solid;
