@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "12f7a39eacfb67bb971a",
+    "revision": "0985433dca579780cbe0",
     "url": "/secret-friend-list/css/app.4eaf20b4.css"
   },
   {
-    "revision": "e596b0c58a4c532382529132cb5efcdb",
+    "revision": "0b8477478e843d1535a6a4e4e7802edb",
     "url": "/secret-friend-list/index.html"
   },
   {
-    "revision": "12f7a39eacfb67bb971a",
-    "url": "/secret-friend-list/js/app.86f276d3.js"
+    "revision": "0985433dca579780cbe0",
+    "url": "/secret-friend-list/js/app.e4ab4330.js"
   },
   {
-    "revision": "8515b3932a37baf02895",
-    "url": "/secret-friend-list/js/chunk-vendors.7efaa7af.js"
+    "revision": "74efbff805e1b68e9bc6",
+    "url": "/secret-friend-list/js/chunk-vendors.56eb04ec.js"
   },
   {
     "revision": "4058e5b3e0f040b8d54203256d74415f",
