@@ -1,5 +1,5 @@
 <template>
-	<h1>Secret Friend List</h1>
+	<h1>Secret Santa List</h1>
 	<!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
 	<div class="box-container">
 		<FriendList v-if="!hasUser()"/>
