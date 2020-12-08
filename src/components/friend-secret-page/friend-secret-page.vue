@@ -1,8 +1,8 @@
 <template lang='pug'>
 h2
-	span(v-if="!checkSecret()") Type your name here
+	span(v-if="!checkSecret()") {{ $translate('type-your-name-here') }}
 		input(v-model="secret")
-	span(v-if="checkSecret()") Your Secret Santa is "<b>{{surpriseFriend.toUpperCase()}}</b>"
+	span(v-if="checkSecret()") {{ $translate('your-secret-santa-is') }} "<b>{{surpriseFriend.toUpperCase()}}</b>"
 </template>
 
 <script lang="ts">

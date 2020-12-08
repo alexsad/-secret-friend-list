@@ -3,9 +3,8 @@
 		<a class="logo" href="https://alexsad.github.io/secret-friend-list/">
 			<img alt="Site logo" src="./assets/gift-box-white.svg">
 		</a>
-		<h1>Secret Santa</h1>
+		<h1>{{$translate('secret-santa')}}</h1>
 	</header>
-	<!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
 	<main>
 		<FriendList v-if="!hasUser()"/>
 		<FriendSecretPage v-if="hasUser()"/>

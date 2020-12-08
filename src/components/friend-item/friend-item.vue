@@ -2,7 +2,8 @@
 .friend-item
 	input(readonly type="text" :value="name")
 	.remove-btn(@click="remove(name)")
-	a.shuffled-uri-link(v-if="surpriseFriend" :href="uri" target="_blank") link
+	a.shuffled-uri-link(v-if="surpriseFriend" :href="uri" target="_blank")
+		img(src="https://icon-library.net//images/share-png-icon/share-png-icon-22.jpg" width="16")
 </template>
 
 <script lang="ts">

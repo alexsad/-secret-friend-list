@@ -1,18 +1,19 @@
 <template lang='pug'>
-h3 Your friends names
+h3 {{ $translate('names-of-your-friends') }}
 ol
 	li(v-for="friend in friends")
 		FriendItem(:name="friend.name" :surprise-friend="friend.surpriseFriend")
-input(type="text" :value="inputText" placeholder="add a friend here" @keyup.enter="addFriend")
-button(:class="{'is-active': friends.length > 2}" @click="shuffleFriends") Shuffle list
+input(type="text" :value="inputText" :placeholder="$translate('add-a-friend-here')" @keyup.enter="addFriend")
+button(:class="{'is-active': friends.length > 2}" @click="shuffleFriends") {{ $translate('shuffle-list') }}
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue';
 import { mapGetters } from 'vuex';
 import store from '../../store/index';
 import FriendItem from '../friend-item/friend-item.vue';
 
-export default {
+export default defineComponent({
 	components:{
 		FriendItem
 	},
@@ -33,9 +34,9 @@ export default {
 	computed: {
 	...mapGetters([
 		'friends',
-	])
+	]),	
   }
-}
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
