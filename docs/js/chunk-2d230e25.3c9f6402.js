@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d230e25"],{edd4:function(e){e.exports=JSON.parse('{"secret-santa":"Secret Santa","names-of-your-friends":"Name of your friends","shuffle-list":"Shuffle List","add-a-friend-here":"Add a friend here","type-your-name-here":"Type your name here","your-secret-santa-is":"You are Secret Santa to"}')}}]);
+//# sourceMappingURL=chunk-2d230e25.3c9f6402.js.map

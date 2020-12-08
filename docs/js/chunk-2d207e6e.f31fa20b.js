@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d207e6e"],{a306:function(e){e.exports=JSON.parse('{"secret-santa":"Amigo Invisible","names-of-your-friends":"Nombre de tus amigos","shuffle-list":"Mezclar la lista","add-a-friend-here":"Escriba el nombre de un amigo aquí","type-your-name-here":"Escriba su nombre aquí","your-secret-santa-is":"Eres el Amigo Invisible para"}')}}]);
+//# sourceMappingURL=chunk-2d207e6e.f31fa20b.js.map

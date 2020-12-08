@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/secret-friend-list/precache-manifest.5a79560b5fe07d503d38d8e4ea805999.js"
+  "/secret-friend-list/precache-manifest.bcbd99343f533063249c73643aef700a.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "secret-friend-list"});
