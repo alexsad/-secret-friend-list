@@ -4,5 +4,6 @@
   "shuffle-list":"Sortear Lista",
   "add-a-friend-here":"Adicione um amigo aqui",
   "type-your-name-here": "Digite seu nome aqui",
-  "your-secret-santa-is": "Seu amigo secreto é"
+  "your-secret-santa-is": "Seu amigo secreto é",
+  "add-a-friend-exception": "Você já tem um amigo com esse nome na lista"
 }

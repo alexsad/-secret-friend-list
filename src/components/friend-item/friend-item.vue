@@ -3,7 +3,7 @@
 	input(readonly type="text" :value="name")
 	.remove-btn(@click="remove(name)")
 	a.shuffled-uri-link(v-if="surpriseFriend" :href="uri" target="_blank")
-		img(src="https://icon-library.net//images/share-png-icon/share-png-icon-22.jpg" width="16")
+		img(src="./assets/share-png-icon-22.jpg" width="16")
 </template>
 
 <script lang="ts">
@@ -15,14 +15,9 @@ export default {
 		surpriseFriend: String,
 	},
 	methods: {
-		addFriend ({target}: KeyboardEvent) {
-			const value = (target as HTMLInputElement).value;
-			if(value && value.trim()){
-				store.commit('add', {name: value.trim().toLowerCase()});
-			}
-		},
 		remove (name: string) {
 			store.commit('remove', name);
+			store.commit('eraseFriends');
 		}
 	},
 	computed: {

@@ -4,6 +4,7 @@ ol
 	li(v-for="friend in friends")
 		FriendItem(:name="friend.name" :surprise-friend="friend.surpriseFriend")
 input(type="text" :value="inputText" :placeholder="$translate('add-a-friend-here')" @keyup.enter="addFriend")
+span.error(v-if="addFriendException") {{ $translate('add-a-friend-exception') }}
 button(:class="{'is-active': friends.length > 2}" @click="shuffleFriends") {{ $translate('shuffle-list') }}
 </template>
 
@@ -17,14 +18,25 @@ export default defineComponent({
 	components:{
 		FriendItem
 	},
+	data(){
+		return {
+			addFriendException: false,
+		}
+	},
 	props: {
-		inputText: String
+		inputText: String,
 	},
 	methods: {
 		addFriend ({target}: KeyboardEvent) {
+			this.addFriendException = false;
 			const value = (target as HTMLInputElement).value;
+			store.commit('eraseFriends');
 			if(value && value.trim()){
-				store.commit('add', {name: value.trim().toLowerCase()});
+				try {
+					store.commit('add', {name: value.trim().toLowerCase()});
+				} catch (error) {
+					this.addFriendException = true;
+				}
 			}
 		},
 		shuffleFriends () {
@@ -34,7 +46,7 @@ export default defineComponent({
 	computed: {
 	...mapGetters([
 		'friends',
-	]),	
+	]),
   }
 });
 </script>
@@ -53,6 +65,11 @@ input{
 		border: none;
 		border-bottom: 1px solid purple;
 	}
+}
+span.error{
+	width: 100%;
+	display: block;
+	color: red;
 }
 button{
 	margin-top:16px;

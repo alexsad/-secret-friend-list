@@ -4,5 +4,6 @@
   "shuffle-list":"Shuffle List",
   "add-a-friend-here":"Add a friend here",
   "type-your-name-here": "Type your name here",
-  "your-secret-santa-is": "You are Secret Santa to"
+  "your-secret-santa-is": "You are Secret Santa to",
+  "add-a-friend-exception": "You already have a friend with that name on the list"
 }

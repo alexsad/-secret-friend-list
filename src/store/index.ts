@@ -12,10 +12,20 @@ export default createStore({
 		idCount: 0,
 	},
 	mutations: {
+		eraseFriends (state) {
+			state.friends.forEach((...[, friendIndex]) => {
+				state.friends[friendIndex].surpriseFriend = '';
+			})
+		},
 		add (state, friend: Friend) {
+			const hasFriend = state.friends.find(({name}) => friend.name === name);
+			if(hasFriend){
+				throw new Error('a friend with name')
+			}else if(!hasFriend){
 				state.idCount++;
 				state.friends.push({...friend,...{id: state.idCount}});
 				state.friends = [...state.friends];
+			}
 		},
 		remove (state, name: string) {
 			const friendIndex = state.friends.findIndex(friend => friend.name === name);
@@ -25,7 +35,7 @@ export default createStore({
 			}
 		},
 		shuffle (state) {
-			const friendsIndexList = state.friends.map((item, index) => index);
+			const friendsIndexList = state.friends.map((...[ , index]) => index);
 
 			if(friendsIndexList.length < 3){
 				return;
