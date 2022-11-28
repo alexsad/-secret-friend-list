@@ -2,6 +2,7 @@
   "name": "secret-friend-list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://secret-santa-list.netlify.app",
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build --dest dist",

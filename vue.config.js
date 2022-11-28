@@ -4,7 +4,7 @@ module.exports = {
 		name:'Secret Santa'
 	},
 
-    publicPath: process.env.NODE_ENV === 'production'
-		? '/secret-friend-list/'
-		: '/',
+    // publicPath: process.env.NODE_ENV === 'production'
+		// ? '/secret-friend-list/'
+		// : '/',
 }

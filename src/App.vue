@@ -1,6 +1,6 @@
 <template>
 	<header>
-		<a class="logo" href="https://alexsad.github.io/secret-friend-list/">
+		<a class="logo" href="/">
 			<img alt="Site logo" src="./assets/gift-box-white.svg">
 		</a>
 		<h1>{{$translate('secret-santa')}}</h1>
