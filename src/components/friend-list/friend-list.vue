@@ -31,9 +31,10 @@ export default defineComponent({
 			this.addFriendException = false;
 			const value = (target as HTMLInputElement).value;
 			store.commit('eraseFriends');
-			if(value && value.trim()){
+			const trimmedValue = value ? value.trim().toLowerCase() : '';
+			if(typeof trimmedValue === 'string' && trimmedValue !== ''){
 				try {
-					store.commit('add', {name: value.trim().toLowerCase()});
+					store.commit('add', {name: trimmedValue});
 				} catch (error) {
 					this.addFriendException = true;
 				}
@@ -59,6 +60,7 @@ input{
 	border-bottom: 1px solid #999999;
 	margin-bottom: 10px;
 	font-size: 1.2rem;
+	text-transform: lowercase;
 
 	&:focus{
 		outline: none !important;

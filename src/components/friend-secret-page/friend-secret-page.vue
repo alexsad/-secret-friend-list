@@ -22,7 +22,7 @@ export default {
 	methods: {
 		checkSecret() {
 			const {secret, user} = this as Secret;
-			return user === secret.toLowerCase();
+			return user === secret.trim().toLowerCase();
 		}
 	},
 	computed: {
@@ -53,6 +53,7 @@ input{
 	border-bottom: 1px solid #999999;
 	height: 18px;
 	font-size: 1.2rem;
+	text-transform: lowercase;
 
 	&:focus{
 		outline: none !important;

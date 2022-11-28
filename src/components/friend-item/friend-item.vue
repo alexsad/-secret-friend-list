@@ -2,8 +2,10 @@
 .friend-item
 	input(readonly type="text" :value="name")
 	.remove-btn(@click="remove(name)")
-	a.shuffled-uri-link(v-if="surpriseFriend" :href="uri" target="_blank")
-		img(src="./assets/share-png-icon-22.jpg" width="16")
+	a.shuffled-uri-link.fas.fa-unlink(v-if="surpriseFriend" :href="uri" target="_blank")
+	//- a.shuffled-uri-link.fab.fa-whatsapp(v-if="surpriseFriend" :href="uri" target="_blank")
+	a.shuffled-uri-link.fab.fa-whatsapp(v-if="surpriseFriend" :href="`https://api.whatsapp.com/send/?text=${encodeURIComponent($translate('your-secret-santa-is')+' '+uri)}`" target="_blank")
+
 </template>
 
 <script lang="ts">
@@ -50,13 +52,19 @@ export default {
 		}
 
 		> .shuffled-uri-link{
-			width: 10%;
+			width: 34px;
 			padding-top: 2px;
 			height: 34px;
+			text-decoration: none;
+
 			// background-color: rgba(77, 11, 66, 0.082);
 			display: inline-block;
 			margin-top: 6px;
 			// vertical-align: bottom;
+
+			&.fa-whatsapp{
+				color: green;
+			}
 		}
 
 		> .remove-btn {
